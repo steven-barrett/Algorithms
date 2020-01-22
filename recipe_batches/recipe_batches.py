@@ -2,9 +2,21 @@
 
 import math
 
-def recipe_batches(recipe, ingredients):
-  pass 
 
+def recipe_batches(recipe, ingredients):
+    # recipe_amounts = {}
+    leastrecipes_by_ingredient = 1000000
+    # Loop over recipe ingredients
+    for key in recipe:
+        if key in ingredients:
+            # For each key, check how many recipes can be made by ingredients[key] // recipe[key]
+            recipes_with_ingredient = ingredients[key] // recipe[key]
+            # If this number is smaller than least_recipes_by_ingredient then update variable
+            if recipes_with_ingredient < leastrecipes_by_ingredient:
+                leastrecipes_by_ingredient = recipes_with_ingredient
+        else:
+            return 0
+    return leastrecipes_by_ingredient
 
 if __name__ == '__main__':
   # Change the entries of these dictionaries to test 
