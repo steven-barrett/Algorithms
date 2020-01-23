@@ -22,8 +22,8 @@ def find_max_profit(prices):
                             currentmax_profit = prices[n] - \
                                 prices[currentmin_index]
         else:
-          # initialize current_max_profit based on the difference between first and second prices
-          # Resolves negative profit issues relating to initializing current_max_profit at 0
+          # << initialize current_max_profit based on the difference between first and second prices
+          # << Resolves negative profit issues relating to initializing current_max_profit to 0 >>
             currentmax_profit = prices[1] - prices[0]
     return currentmax_profit
 

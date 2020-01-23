@@ -5,9 +5,6 @@ import sys
 def rock_paper_scissors(n):
     # initialize an array with possible options
     rps = ['rock', 'paper', 'scissors']
-    # for play in rps:
-    #   for play2 in rps:
-    #     result.append([play, play2])
     results = []
 
     def loop(n, previous_plays=[]):

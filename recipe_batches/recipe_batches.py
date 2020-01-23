@@ -3,8 +3,7 @@
 import math
 
 
-def recipe_batches(recipe, ingredients):
-    # recipe_amounts = {}
+def recipe_batches(recipe, ingredients):    
     leastrecipes_by_ingredient = 1000000
     # Loop over recipe ingredients
     for key in recipe:
